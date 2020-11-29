@@ -8,6 +8,8 @@ namespace SimpleCashRegister.EatingAreas {
     class ZoneRegistrar {
 
         private List<EatingZone> areas = new List<EatingZone>();
+        // Creates a zone registrar to handle what happens for each zone.
+        // Created so later down the road this can be expanded to add location variables
         public ZoneRegistrar() {
             areas.Add(new EatingZone("Zone 1", 2));
             areas.Add(new EatingZone("Zone 2", 3));
@@ -16,6 +18,8 @@ namespace SimpleCashRegister.EatingAreas {
 
         }
 
+        // Gets the zone by the defined name.
+        // Will throw custom exception if there is an issue
         public EatingZone GetZoneFromName(String zoneName) {
             foreach (EatingZone zone in areas) {
                 if (zone.GetZoneName().ToLower() == zoneName.ToLower()) {

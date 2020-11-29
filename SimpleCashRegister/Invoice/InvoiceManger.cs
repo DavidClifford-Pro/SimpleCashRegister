@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 namespace SimpleCashRegister.Invoice {
     class InvoiceManger {
 
+        // This allows us to see the different items on the current order
+
+        private double salesTax = 0.07;
+
         private List<Item> items = new List<Item>();
 
         private String pickUpZoneName = "Eat In / Pickup";
-
         public InvoiceManger() {}
 
         public void ClearInvoice() {
@@ -38,6 +41,8 @@ namespace SimpleCashRegister.Invoice {
             }
         }
 
+        // Add an item to the order
+        // If the item already is on the order, it will add more amount to the object.
         public Item AddItem(String itemToAdd, int amount) {
             foreach (Item item in items) {
                 if (item.GetItemName().ToLower().Equals(itemToAdd.ToLower())) {
@@ -54,6 +59,15 @@ namespace SimpleCashRegister.Invoice {
             
         }
 
+
+        /*
+         * Below here gets all the math values for us 
+         * Subtotal
+         * Delivery
+         * Sales tax
+         * Total cost
+         */
+
         public double GetSubtotal() {
             double cost = 0;
             foreach (Item item in items) {
@@ -68,7 +82,7 @@ namespace SimpleCashRegister.Invoice {
         }
 
         public double GetSalesTax() {
-            return (GetSubtotal() + GetDeliveryCost()) * .07; 
+            return (GetSubtotal() + GetDeliveryCost()) * salesTax;
         }
 
         public double GetTotalCost() {

@@ -11,6 +11,7 @@ namespace SimpleCashRegister.Invoice {
 
         private Foods.Food foodReference;
 
+        // Items object for each item in the invoice so we can keep track of what's what.
         public Item(String itemName, int amount) {
             this.itemName = itemName;
             this.amount = amount;

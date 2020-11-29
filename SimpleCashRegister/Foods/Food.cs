@@ -11,8 +11,8 @@ namespace SimpleCashRegister.Foods {
         private double foodCost;
         private FoodTypes.FoodType foodType;
         
+        // Creates a food object so we can have all the variables easily accessible
         public Food(String foodName, double cost, FoodTypes.FoodType foodType) {
-
             this.foodName = foodName;
             this.foodCost = cost;
             this.foodType = foodType;

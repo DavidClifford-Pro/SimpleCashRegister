@@ -14,14 +14,24 @@ namespace SimpleCashRegister {
 
         [STAThread]
         static void Main() {
+            // Create the registrars
             foodRegistrar = new Foods.FoodRegistrar();
             zoneRegistrar = new EatingAreas.ZoneRegistrar();
             invoiceManger = new Invoice.InvoiceManger();
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
         }
 
+
+        /*
+         * Below here is a reference to all the managers and registrar objects
+         * Food Registrar
+         * Zone Registrar
+         * Invoice Manager
+         */
         public static Foods.FoodRegistrar GetFoodRegistrar() {
             return foodRegistrar;
         }

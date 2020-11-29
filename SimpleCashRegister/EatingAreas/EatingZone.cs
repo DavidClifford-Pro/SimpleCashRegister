@@ -10,6 +10,7 @@ namespace SimpleCashRegister.EatingAreas {
         private String zoneName;
         private double zoneCost;
 
+        // This is a zone area object
         public EatingZone(String zoneName, double cost) {
             this.zoneName = zoneName;
             this.zoneCost = cost;
