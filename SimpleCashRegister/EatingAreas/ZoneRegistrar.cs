@@ -9,9 +9,9 @@ namespace SimpleCashRegister.EatingAreas {
 
         private List<EatingZone> areas = new List<EatingZone>();
         public ZoneRegistrar() {
-            areas.Add(new EatingZone("Delivery Zone 1", 2));
-            areas.Add(new EatingZone("Delivery Zone 2", 3));
-            areas.Add(new EatingZone("Delivery Zone 3", 4));
+            areas.Add(new EatingZone("Zone 1", 2));
+            areas.Add(new EatingZone("Zone 2", 3));
+            areas.Add(new EatingZone("Zone 3", 4));
             areas.Add(new EatingZone("Eat In / Pickup", 0));
 
         }

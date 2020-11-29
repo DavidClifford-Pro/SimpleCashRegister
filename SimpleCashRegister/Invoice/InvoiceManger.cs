@@ -21,23 +21,37 @@ namespace SimpleCashRegister.Invoice {
             return items;
         }
 
+        public void UpdateDeliveryLocation(String newLocation) {
+            this.pickUpZoneName = newLocation;
+        }
+
         public void RemoveItem(String itemToRemove) {
+            Item located = null;
             foreach (Item item in items) {
                 if (item.GetItemName().ToLower().Equals(itemToRemove.ToLower())) {
-                    items.Remove(item);
+                    located = item;
+                    break;
                 }
+            }
+            if (located != null) {
+                items.Remove(located);
             }
         }
 
-        public void AddItem(String itemToAdd, int amount) {
+        public Item AddItem(String itemToAdd, int amount) {
             foreach (Item item in items) {
                 if (item.GetItemName().ToLower().Equals(itemToAdd.ToLower())) {
                     item.AddMoreTo(amount);
-                    return;
+                    Console.WriteLine("Added: " + itemToAdd + " amount: " + amount);
+                    return item;
                 }
             }
             // If we get here we need to create a new item
-            items.Add(new Item(itemToAdd, amount));
+            Item i = new Item(itemToAdd, amount);
+            items.Add(i);
+            Console.WriteLine("Added: " + itemToAdd + " amount: " + amount);
+            return i;
+            
         }
 
         public double GetSubtotal() {
@@ -54,7 +68,7 @@ namespace SimpleCashRegister.Invoice {
         }
 
         public double GetSalesTax() {
-            return (GetSubtotal() + GetDeliveryCost()) * 1.07; 
+            return (GetSubtotal() + GetDeliveryCost()) * .07; 
         }
 
         public double GetTotalCost() {

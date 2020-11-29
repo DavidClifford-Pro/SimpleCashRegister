@@ -18,7 +18,7 @@ namespace SimpleCashRegister.Foods {
         public Food GetFoodFromName(String foodName) {
 
             foreach (Food food in foods) {
-                if (food.GetFoodName().ToLower() == foodName.ToLower()) {
+                if (food.GetFoodName().ToLower().Equals(foodName.ToLower())) {
                     return food;
                 }
 

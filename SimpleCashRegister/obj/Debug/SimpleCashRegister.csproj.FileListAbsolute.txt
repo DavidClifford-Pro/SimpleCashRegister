@@ -8,3 +8,13 @@ C:\Users\djcli\source\repos\SimpleCashRegister\SimpleCashRegister\obj\Debug\Simp
 C:\Users\djcli\source\repos\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.exe
 C:\Users\djcli\source\repos\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.pdb
 C:\Users\djcli\source\repos\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.Form1.resources
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\bin\Debug\SimpleCashRegister.exe.config
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\bin\Debug\SimpleCashRegister.exe
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\bin\Debug\SimpleCashRegister.pdb
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.csprojAssemblyReference.cache
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.Form1.resources
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.Properties.Resources.resources
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.csproj.GenerateResource.cache
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.csproj.CoreCompileInputs.cache
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.exe
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.pdb
