@@ -18,3 +18,4 @@ C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\S
 C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.csproj.CoreCompileInputs.cache
 C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.exe
 C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.pdb
+C:\Users\djcli\ngplusworkspace\SimpleCashRegister\SimpleCashRegister\obj\Debug\SimpleCashRegister.Form2.resources
